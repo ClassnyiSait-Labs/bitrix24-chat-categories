@@ -1,0 +1,29 @@
+{
+    "name": "classnyisait-labs/bitrix24-chat-categories",
+    "description": "Free self-hosted Bitrix24 module: personal chat categories in the messenger",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://classnyisait.ru/modules/",
+    "support": {
+        "issues": "https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories/issues",
+        "source": "https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories"
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Classnyisait\\ChatCategories\\": "classnyisait.chatcategories/lib/",
+            "Bitrix\\": "tests/stubs/Bitrix/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

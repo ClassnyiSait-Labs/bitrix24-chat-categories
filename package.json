@@ -1,0 +1,23 @@
+{
+    "name": "bitrix24-chat-categories",
+    "version": "1.0.16",
+    "description": "Free self-hosted Bitrix24 module: personal chat categories in the messenger",
+    "private": true,
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories.git"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "testMatch": [
+            "<rootDir>/classnyisait.chatcategories/test/**/*.test.js"
+        ]
+    }
+}

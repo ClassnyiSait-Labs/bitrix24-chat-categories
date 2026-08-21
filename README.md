@@ -2,6 +2,9 @@
 
 [Русская версия](README.ru.md) · [MIT License](LICENSE)
 
+[![CI](https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories/actions/workflows/ci.yml/badge.svg)](https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+
 Free and open-source module for **self-hosted Bitrix24** that lets every user organise the
 messenger with their own chat categories — custom tabs next to the built-in ones.
 
@@ -51,6 +54,20 @@ classnyisait.chatcategories/
 ├── lib/EventHandler.php  messenger UI integration
 └── test/               PHP and JS tests
 ```
+
+## Development
+
+```bash
+composer install
+composer test          # 59 PHPUnit tests
+npx jest              # 41 Jest tests
+```
+
+Tests cover the pure logic that runs without a Bitrix kernel. Anything touching the
+database, the basket or the messenger UI needs a live portal and is verified manually —
+see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+CI runs the linter and the test suite on PHP 8.1, 8.2 and 8.3 for every push and pull request.
 
 ## Contributing
 

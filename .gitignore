@@ -1,6 +1,20 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Tooling caches
+/.phpunit.cache/
+/.phpunit.result.cache
+
+# Composer lock is not committed: this is a library, CI resolves fresh
+composer.lock
+
+# Editors / OS
 .idea/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Build artefacts
 *.log
 *.zip

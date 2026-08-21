@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Вопрос по установке или настройке
+    url: https://classnyisait.ru/modules/
+    about: Описание модуля, требования и порядок установки
+  - name: Уязвимость в безопасности
+    url: https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories/security/advisories/new
+    about: Приватный отчёт — не заводите публичный issue

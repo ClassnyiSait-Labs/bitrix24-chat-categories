@@ -1,0 +1,62 @@
+name: Отчёт об ошибке
+description: Что-то работает не так, как описано
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за отчёт. Чем точнее версии и шаги, тем быстрее найдётся причина.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Что происходит
+      description: Что вы делали, что ожидали увидеть и что увидели вместо этого.
+      placeholder: |
+        1. Открыл ...
+        2. Нажал ...
+        3. Ожидал ..., но получил ...
+    validations:
+      required: true
+
+  - type: input
+    id: platform-version
+    attributes:
+      label: Версия коробочного Bitrix24
+      placeholder: например, 26.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: php-version
+    attributes:
+      label: Версия PHP
+      placeholder: например, 8.2.15
+    validations:
+      required: true
+
+  - type: input
+    id: module-version
+    attributes:
+      label: Версия модуля
+      description: Смотрите в `classnyisait.chatcategories/install/version.php` или в списке установленных решений.
+      placeholder: например, 1.0.16
+    validations:
+      required: true
+
+  - type: textarea
+    id: errors
+    attributes:
+      label: Ошибки в логах или консоли
+      description: PHP-ошибки, сообщения из консоли браузера, ответы AJAX. Будут отформатированы как код.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Дополнительно
+      description: Скриншоты, особенности портала, изменённые шаблоны — всё, что может быть связано.
+    validations:
+      required: false

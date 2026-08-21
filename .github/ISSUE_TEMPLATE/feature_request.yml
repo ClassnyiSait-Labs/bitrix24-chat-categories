@@ -1,0 +1,26 @@
+name: Предложение
+description: Идея по развитию модуля
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую задачу это решает
+      description: Опишите ситуацию, в которой сейчас неудобно. Это важнее, чем само предложение.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Что предлагаете
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Что пробовали вместо этого
+      description: Настройки, доработка шаблона, другой модуль.
+    validations:
+      required: false
