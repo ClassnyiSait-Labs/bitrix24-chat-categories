@@ -2,7 +2,7 @@
 
 [English version](README.md) · [Лицензия MIT](LICENSE)
 
-[![CI](https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories/actions/workflows/ci.yml/badge.svg)](https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![CI](https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories/actions/workflows/ci.yml/badge.svg)](https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories/actions/workflows/ci.yml) [![Latest release](https://img.shields.io/github/v/release/ClassnyiSait-Labs/bitrix24-chat-categories?label=release)](https://github.com/ClassnyiSait-Labs/bitrix24-chat-categories/releases/latest) [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777bb4)](https://www.php.net/) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 
 Бесплатный модуль с открытым исходным кодом для **коробочного Bitrix24**. Позволяет каждому
