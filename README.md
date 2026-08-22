@@ -36,7 +36,7 @@ group their chats the way they actually work — per project, per client, per te
 2. **Marketplace → Installed solutions** → *Chat categories* → *Install*.
 3. Reload the messenger — the categories UI appears next to the standard tabs.
 
-Marketplace listing: <https://classnyisait.ru/modules/>
+Marketplace listing: <https://marketplace.1c-bitrix.ru/solutions/classnyisait.chatcategories/>
 
 ## Screenshots
 
