@@ -8,6 +8,13 @@
 Free and open-source module for **self-hosted Bitrix24** that lets every user organise the
 messenger with their own chat categories — custom tabs next to the built-in ones.
 
+
+## Видео
+
+[Категории чатов в Битрикс24: диалоги по отделам и проектам](https://www.youtube.com/watch?v=owqIcdXdp8w)
+
+Канал: https://www.youtube.com/@ClassnyiSaitLabs
+
 ![Chat categories in the messenger](docs/screenshots/01-overview.png)
 
 ## Why
