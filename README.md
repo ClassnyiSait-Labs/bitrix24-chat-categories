@@ -43,6 +43,9 @@ group their chats the way they actually work — per project, per client, per te
 2. **Marketplace → Installed solutions** → *Chat categories* → *Install*.
 3. Reload the messenger — the categories UI appears next to the standard tabs.
 
+
+Runtime JS and CSS are published to `/bitrix/js/classnyisait.chatcategories/` and `/bitrix/css/classnyisait.chatcategories/`. The module itself still installs into `/local/modules/` or `/bitrix/modules/`.
+
 Marketplace listing: <https://marketplace.1c-bitrix.ru/solutions/classnyisait.chatcategories/>
 
 ## Screenshots
