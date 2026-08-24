@@ -43,6 +43,9 @@
 2. **Marketplace → Установленные решения** → «Категории чатов» → *Установить*.
 3. Перезагрузите мессенджер — блок категорий появится рядом со штатными вкладками.
 
+
+Рабочие JS и CSS публикуются в `/bitrix/js/classnyisait.chatcategories/` и `/bitrix/css/classnyisait.chatcategories/`. Сам модуль по-прежнему устанавливается в `/local/modules/` или `/bitrix/modules/`.
+
 Страница модуля: <https://classnyisait.ru/modules/>
 
 ## Скриншоты
