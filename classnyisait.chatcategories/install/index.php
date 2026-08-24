@@ -29,6 +29,7 @@ class classnyisait_chatcategories extends CModule
 
     function DoInstall()
     {
+        $this->InstallFiles();
         $this->InstallDB();
         $this->InstallEvents();
         ModuleManager::registerModule($this->MODULE_ID);
@@ -37,35 +38,33 @@ class classnyisait_chatcategories extends CModule
 
     function DoUninstall()
     {
-        global $APPLICATION;
-
-        $step = max(1, (int)($_REQUEST['step'] ?? 1));
-        if ($step === 1) {
-            $APPLICATION->IncludeAdminFile(
-                'Удаление модуля «Категории чатов»',
-                __DIR__ . '/unstep1.php'
-            );
-
-            return true;
-        }
-
-        if (!check_bitrix_sessid()) {
-            return false;
-        }
-
-        $deleteData = (string)($_REQUEST['delete_data'] ?? 'N') === 'Y';
-
         $this->UnInstallEvents();
-        if ($deleteData) {
-            $this->UnInstallDB();
-        }
         ModuleManager::unRegisterModule($this->MODULE_ID);
+        $this->UnInstallDB();
+        $this->UnInstallFiles();
+    }
 
-        $APPLICATION->IncludeAdminFile(
-            'Удаление модуля «Категории чатов»',
-            __DIR__ . '/unstep2.php'
+    function InstallFiles()
+    {
+        CopyDirFiles(
+            __DIR__ . "/js",
+            $_SERVER["DOCUMENT_ROOT"] . "/bitrix/js/classnyisait.chatcategories",
+            true,
+            true
         );
+        CopyDirFiles(
+            __DIR__ . "/css",
+            $_SERVER["DOCUMENT_ROOT"] . "/bitrix/css/classnyisait.chatcategories",
+            true,
+            true
+        );
+        return true;
+    }
 
+    function UnInstallFiles()
+    {
+        DeleteDirFilesEx("/bitrix/js/classnyisait.chatcategories");
+        DeleteDirFilesEx("/bitrix/css/classnyisait.chatcategories");
         return true;
     }
 
